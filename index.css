@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.rectangle {
+    background-color: #ffffff;
+    padding: 40px; /* Уменьшение отступов для меньших экранов */
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    max-width: 900px;
+    margin: 50px auto; /* Уменьшение верхнего отступа */
+    line-height: 1.6;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #888;
+    padding: 15px 10px;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.footer-right a {
+    color: #888;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #fff;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Меньший шрифт для мобильных */
+    }
+
+    .rectangle {
+        padding: 20px; /* Уменьшаем отступы */
+        margin: 20px auto; /* Уменьшаем отступ сверху */
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .footer-right a {
+        margin: 5px 0;
+    }
+}
+
+/* Для планшетов */
+@media (max-width: 768px) {
+    .rectangle {
+        padding: 30px; /* Уменьшаем отступы для планшетов */
+    }
+
+    footer {
+        font-size: 16px; /* Увеличиваем шрифт на планшетах */
+    }
+}
+
+/* Для ноутбуков и десктопов */
+@media (min-width: 1024px) {
+    .rectangle {
+        padding: 40px; /* Стандартные отступы для больших экранов */
+    }
+
+    footer {
+        font-size: 14px; /* Нормальный размер шрифта */
+    }
+
+    .add-bot-button {
+        padding: 15px 30px; /* Стандартный размер кнопки */
+    }
+}
+
+.policy-content {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 15px;
+    line-height: 1.6;
+}
+
+.policy-content h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.policy-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.policy-content a {
+    color: #333;
+    text-decoration: none;
+}
+
+.policy-content a:hover {
+    color: #666;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.add-bot-button {
+    background-color: #000000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.add-bot-button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
