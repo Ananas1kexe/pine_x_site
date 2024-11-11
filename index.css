@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -6,16 +7,18 @@ body {
     text-align: center;
 }
 
+
 .rectangle {
     background-color: #ffffff;
-    padding: 40px; /* Уменьшение отступов для меньших экранов */
+    padding: 50px 30px;
     border-radius: 30px;
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
     max-width: 900px;
-    margin: 50px auto; /* Уменьшение верхнего отступа */
+    margin: 100px auto;
     line-height: 1.6;
     text-align: left;
 }
+
 
 footer {
     background-color: #333;
@@ -32,6 +35,7 @@ footer {
     text-align: center;
     box-sizing: border-box;
 }
+
 
 footer p {
     margin: 5px 0;
@@ -68,17 +72,8 @@ footer p {
     color: #fff;
 }
 
-/* Для мобильных устройств */
+
 @media (max-width: 600px) {
-    body {
-        font-size: 14px; /* Меньший шрифт для мобильных */
-    }
-
-    .rectangle {
-        padding: 20px; /* Уменьшаем отступы */
-        margin: 20px auto; /* Уменьшаем отступ сверху */
-    }
-
     footer {
         flex-direction: column;
         text-align: center;
@@ -96,31 +91,6 @@ footer p {
     }
 }
 
-/* Для планшетов */
-@media (max-width: 768px) {
-    .rectangle {
-        padding: 30px; /* Уменьшаем отступы для планшетов */
-    }
-
-    footer {
-        font-size: 16px; /* Увеличиваем шрифт на планшетах */
-    }
-}
-
-/* Для ноутбуков и десктопов */
-@media (min-width: 1024px) {
-    .rectangle {
-        padding: 40px; /* Стандартные отступы для больших экранов */
-    }
-
-    footer {
-        font-size: 14px; /* Нормальный размер шрифта */
-    }
-
-    .add-bot-button {
-        padding: 15px 30px; /* Стандартный размер кнопки */
-    }
-}
 
 .policy-content {
     background-color: #fff;
@@ -175,23 +145,39 @@ ul li {
     margin-bottom: 10px;
 }
 
-.button-container {
+
+.buttons-container {
     display: flex;
     justify-content: center;
+    gap: 20px;
     margin-top: 30px;
 }
 
-.add-bot-button {
+
+.add-bot-button, .support-button {
     background-color: #000000;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.add-bot-button:hover {
+.add-bot-button:hover, .support-button:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 600px) {
+    .buttons-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .add-bot-button, .support-button {
+        width: 100%; 
+        padding: 15px;
+    }
 }
