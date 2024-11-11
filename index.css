@@ -154,7 +154,7 @@ ul li {
 }
 
 
-.add-bot-button, .support-button {
+.add-bot-button, .support-button, .status-button {
     background-color: #000000;
     color: white;
     padding: 15px 30px;
@@ -164,7 +164,7 @@ ul li {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.add-bot-button:hover, .support-button:hover {
+.add-bot-button:hover, .support-button:hover, .status-button:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
@@ -176,7 +176,7 @@ ul li {
         gap: 15px;
     }
 
-    .add-bot-button, .support-button {
+    .add-bot-button, .support-button, .status-button {
         width: 100%; 
         padding: 15px;
     }
