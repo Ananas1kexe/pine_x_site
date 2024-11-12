@@ -185,7 +185,7 @@ ul li {
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -194,17 +194,18 @@ ul li {
 
 
 .menu img {
-    width: 40px;
-    height: 40px;
+    width: 30px; 
+    height: 30px;
     border-radius: 50%;
 }
 
-
+/* Стили для ссылок в меню */
 .menu a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 16px; 
 }
 
 .menu a:hover {
@@ -219,11 +220,16 @@ ul li {
 @media (max-width: 600px) {
     .menu {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px; 
     }
 
     .menu a {
-        font-size: 18px;
-        margin: 10px 0;
+        font-size: 14px; 
+        margin: 5px 0; 
+    }
+
+    .menu img {
+        width: 25px; 
+        height: 25px; 
     }
 }
