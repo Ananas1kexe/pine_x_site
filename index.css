@@ -174,62 +174,50 @@ ul li {
     }
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    gap: 20px;
-    background-color: #000000;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); 
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-}
-
-
-.menu img {
-    width: 30px; 
-    height: 30px;
-    border-radius: 50%;
-}
-
-/* Стили для ссылок в меню */
 .menu a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
     transition: color 0.3s ease;
     font-size: 16px; 
+    padding: 5px 10px; 
 }
 
 .menu a:hover {
-    color: #028dff; 
+    color: #028dff;
 }
 
 .menu .highlighted-link {
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
 }
 
 
 @media (max-width: 600px) {
     .menu {
-        flex-direction: column;
-        padding: 10px; 
+        flex-direction: row; 
+        padding: 5px 10px; 
+        gap: 10px;
     }
 
     .menu a {
-        font-size: 14px; 
-        margin: 5px 0; 
+        font-size: 14px;
+        padding: 5px 8px;
+        margin: 0;  
     }
 
-    .menu img {
-        width: 25px; 
-        height: 25px; 
+
+}
+
+
+@media (max-width: 400px) {
+    .menu {
+        padding: 5px 5px; 
+        gap: 5px; 
     }
+
+    .menu a {
+        font-size: 12px;
+        padding: 3px 5px; 
+    }
+
 }
