@@ -192,6 +192,14 @@ ul li {
     transition: background-color 0.3s ease;
 }
 
+.footer-left a.selection {
+    color: rgb(136, 136, 136); 
+    text-decoration: none; 
+}
+
+.footer-left a.selection:hover {
+    color: #fff; 
+}
 
 .menu img {
     width: 30px; 
@@ -199,7 +207,7 @@ ul li {
     border-radius: 50%;
 }
 
-/* Стили для ссылок в меню */
+
 .menu a {
     text-decoration: none;
     color: rgb(255, 255, 255);
