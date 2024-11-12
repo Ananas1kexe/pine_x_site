@@ -1,12 +1,10 @@
-
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background: linear-gradient(to bottom, #000000 20%, #1a1a1a 90%); 
     font-family: Arial, sans-serif;
     text-align: center;
 }
-
 
 .rectangle {
     background-color: #ffffff;
@@ -18,7 +16,6 @@ body {
     line-height: 1.6;
     text-align: left;
 }
-
 
 footer {
     background-color: #333;
@@ -35,7 +32,6 @@ footer {
     text-align: center;
     box-sizing: border-box;
 }
-
 
 footer p {
     margin: 5px 0;
@@ -66,12 +62,12 @@ footer p {
 .footer-right a {
     color: #888;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-right a:hover {
     color: #fff;
 }
-
 
 @media (max-width: 600px) {
     footer {
@@ -90,7 +86,6 @@ footer p {
         margin: 5px 0;
     }
 }
-
 
 .policy-content {
     background-color: #fff;
@@ -145,14 +140,12 @@ ul li {
     margin-bottom: 10px;
 }
 
-
 .buttons-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
 }
-
 
 .add-bot-button, .support-button, .status-button {
     background-color: #000000;
@@ -169,7 +162,6 @@ ul li {
     color: rgb(0, 0, 0);
 }
 
-
 @media (max-width: 600px) {
     .buttons-container {
         flex-direction: column;
@@ -179,5 +171,59 @@ ul li {
     .add-bot-button, .support-button, .status-button {
         width: 100%; 
         padding: 15px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    background-color: #000000;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+
+.menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #028dff; 
+}
+
+.menu .highlighted-link {
+    color: rgb(255, 255, 255); 
+}
+
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        margin: 10px 0;
     }
 }
