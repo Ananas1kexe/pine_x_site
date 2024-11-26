@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PINE X</title>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -40,12 +40,9 @@
     </div>
 
     <div class="rectangle">
-        <h1>Доп. Инфо</h1>
-      
-        <p>Рад вас видеть на своем сайте я Ananas1k (ник в дс anasn1k47) я делаю PINE X я разработчик дизайнер пиар менеджер поддержка и все остольное я стараюсь работать каждый день чтоб улучшать PINE X если вы найдете баг сообщите об этом мне в моем <a href="https://discord.gg/KmskWpN5nb">дискорд сервере</a> так же если у вас есть какие либо предложения так же напишите мне</p>
-        <p><a href="https://discordapp.com/users/1232238825934163989" target="_blank">Открыть мой профиль в Discord</a></p>
+        <h1>Логирования модерации</h1>
+        <p>Pine X предостовляет Логирования своих действий модерации</p>
     </div>
-
 
     <div class="menu">
 
@@ -55,7 +52,30 @@
         <a href="commands.html">Bot commands</a>
         <a href="PINE X PRO" class="highlighted-link">PINE X - PREMIUM</a>
     </div>
-    
+    <script>
+        document.querySelectorAll('.menu a').forEach(item => {
+            item.addEventListener('mouseenter', function (e) {
+                const width = item.offsetWidth;  
+                const mouseX = e.clientX - item.getBoundingClientRect().left;  
+        
+                
+                if (mouseX < width / 2) {
+                    item.classList.add('left-hover');
+                    item.classList.remove('right-hover');
+                } else {
+                    item.classList.add('right-hover');
+                    item.classList.remove('left-hover');
+                }
+            });
+        
+            item.addEventListener('mouseleave', function () {
+                
+                item.classList.remove('left-hover', 'right-hover');
+            });
+        });
+        
+        
+    </script>
 
     <footer>
 
@@ -67,16 +87,30 @@
             <p>&copy; 2024 PINE X. Все права защищены.</p>
             <p>Мы не являемся аффилированным лицом компании Discord Inc.</p>
             <p>Идею, дизайн, код разработан ананасиком (@ananas1k47)</p>
-           <p><a href="https://discordapp.com/users/1232238825934163989" target="_blank">Открыть мой профиль в Discord</a>></p>
-
         </div>
 
-        <div class="footer-right">
+        <!-- <div class="footer-right">
             <a href="https://discord.gg/KmskWpN5nb" target="_blank">Discord</a>
             <a href="https://youtube.com" target="_blank">YouTube</a>
             <a href="https://t.me/pine_x_official" target="_blank">Telegram</a>
             <a href="https://discord.com/oauth2/authorize?client_id=1288386401133400104&scope=bot&permissions=8">Добавить бота</a>
-        </div>
+        </div> -->
+        <div class="footer-left">
+            <div class="footer-right">
+                <a href="https://discord.gg/KmskWpN5nb" target="_blank" class="sosi">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="sosi">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://t.me" target="_blank" class="sosi">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://github.com/Ananas1kexe/"target="_blank" class="sosi">
+                    <i class="fab fa-github"></i>
+
+                </a>
+            </div>
 
     </footer>
     
